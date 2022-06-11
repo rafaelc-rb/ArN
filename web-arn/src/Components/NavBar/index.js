@@ -2,7 +2,6 @@ import React from 'react'
 import {
     Nav,
     Navbar,
-    NavDropdown,
     Container
 } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
@@ -21,22 +20,22 @@ function NavBar() {
         let path = '/contact';
         navigate(path);
     }
-    const anps = () => {
-        let path = '/anapolis';
-        navigate(path);
-    }
-    const ov = () => {
-        let path = '/ouro-verde';
-        navigate(path);
-    }
-    const alxn = () => {
-        let path = '/alexania';
-        navigate(path);
-    }
-    const abdn = () => {
-        let path = '/abadiania';
-        navigate(path);
-    }
+    // const anps = () => {
+    //     let path = '/anapolis';
+    //     navigate(path);
+    // }
+    // const ov = () => {
+    //     let path = '/ouro-verde';
+    //     navigate(path);
+    // }
+    // const alxn = () => {
+    //     let path = '/alexania';
+    //     navigate(path);
+    // }
+    // const abdn = () => {
+    //     let path = '/abadiania';
+    //     navigate(path);
+    // }
 
     return (
         <Navbar bg="light" expand="lg">

@@ -24,7 +24,7 @@ function Banner() {
                     alt="Second slide"
                 />
                 <Carousel.Caption>
-                    <h1>Naruto</h1>
+                    <h1 style={{color:'white'}}>Naruto</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -34,7 +34,7 @@ function Banner() {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <h1>One Piece</h1>
+                    <h1 style={{color:'white'}}>One Piece</h1>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 
 }
 
-body{
+body {
     /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("./Assets/Img/background.jpg"); */
     background-size: 1500px;
     font-family: 'Maven Pro';
@@ -18,29 +20,35 @@ button {
     font-family: 'Maven Pro';
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
-a{ 
+a {
     text-decoration: none;
 }
 
 
 /*Definição de títulos/ subtitulos/ corpos de texto */
-h1{
-    color: #1b1b1b;
+h1 {
+    color: #000000;
     font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
 }
 
-h2{ color: #1b1b1b;
-    font-size:27px
+h2 {
+    color: #000000;
+    font-size: 27px
 }
 
-h3{ color: #382f2f;
-    font-size:20px;
+h3 {
+    color: #999999;
+    text-align: center;
+    line-height: 10px;
+    font-size: 18px;
 }
 
-p{ 
+p {
     color: #382f2f;
-    font-size:15px; 
+    font-size: 15px;
 }
