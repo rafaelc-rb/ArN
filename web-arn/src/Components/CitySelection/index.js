@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-    Dropdown,
-    DropdownMenu,
-    DropdownItem,
-    DropdownToggle
-} from 'reactstrap'
+import { Dropdown } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -29,27 +24,19 @@ function CitySelection() {
         navigate(path);
     }
     return (
-        <div className="d-flex justify-content-center p-5">
-            <Dropdown toggle={function noRefCheck() { }}>
-                <DropdownToggle caret>
-                    Selecione sua cidade
-                </DropdownToggle>
-                <DropdownMenu>
-                    <DropdownItem onClick={anps} >
-                        Anápolis
-                    </DropdownItem>
-                    <DropdownItem onClick={ov} >
-                        Ouro Verde
-                    </DropdownItem>
-                    <DropdownItem onClick={alxn} >
-                        Alexânia
-                    </DropdownItem>
-                    <DropdownItem onClick={abdn} >
-                        Abadiânia
-                    </DropdownItem>
-                </DropdownMenu>
-            </Dropdown>
-        </div>
+        <Dropdown className="d-inline mx-2" autoClose="outside">
+            <Dropdown.Toggle id="dropdown-autoclose-outside">
+                Selecione sua cidade
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+                <Dropdown.Item onClick={anps}>Anápolis</Dropdown.Item>
+                <Dropdown.Item onClick={ov}>Ouro Verde</Dropdown.Item>
+                <Dropdown.Item onClick={alxn}>Alexânia</Dropdown.Item>
+                <Dropdown.Item onClick={abdn}>Abadiânia</Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
+
     )
 }
 

@@ -1,20 +1,14 @@
 import React from 'react'
-import { 
-    Nav, 
-    Navbar, 
-    NavbarBrand, 
-    NavbarToggler, 
-    NavItem, 
-    NavLink, 
-    UncontrolledDropdown, 
-    DropdownToggle, 
-    DropdownMenu, 
-    DropdownItem, 
-    Collapse, 
-} from 'reactstrap'
+import {
+    Nav,
+    Navbar,
+    NavDropdown,
+    Container
+} from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import './styles.css'
 import logo from '../../Assets/Img/logo.png'
+import CitySelection from '../CitySelection'
 
 function NavBar() {
 
@@ -45,77 +39,28 @@ function NavBar() {
     }
 
     return (
-        <div>
-            <Navbar
-                className='header'
-                color="light"
-                expand="lg"
-                full
-                light
-            >
-                <NavbarBrand href="/">
-                    <img
-                        src={logo}
-                        alt='logo'
-                        width='250px'
-                    />
-                </NavbarBrand>
-                <NavbarToggler onClick={function noRefCheck() { }} />
-                <Collapse navbar>
-                    <Nav
-                        className="me-auto"
-                        navbar
-                        style={{justifyItems:'space-evenly'}}
-                    >
-                        <NavItem>
-                            <NavLink onClick={about}>
-                                Sobre
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink>
-                                Planos
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="https://www.speedtest.net/pt">
-                                Teste de Conexão
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink onClick={contact}>
-                                Atendimento
-                            </NavLink>
-                        </NavItem>
-                        <UncontrolledDropdown
-                            inNavbar
-                            nav
-                        >
-                            <DropdownToggle
-                                caret
-                                nav
-                            >
-                                Selecione sua cidade
-                            </DropdownToggle>
-                            <DropdownMenu >
-                                <DropdownItem onClick={anps} >
-                                    Anápolis
-                                </DropdownItem>
-                                <DropdownItem onClick={ov} >
-                                    Ouro Verde
-                                </DropdownItem>
-                                <DropdownItem onClick={alxn} >
-                                    Alexânia
-                                </DropdownItem>
-                                <DropdownItem onClick={abdn} >
-                                    Abadiânia
-                                </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
-                    </Nav>                    
-                </Collapse>
-            </Navbar>
-        </div>
+        <Navbar bg="light" expand="lg">
+            <Container>
+                <Navbar.Brand href="/"><img
+                    src={logo}
+                    alt='logo'
+                    width='250px'
+                /></Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link onClick={about}>Sobre nós</Nav.Link>
+                        <Nav.Link href="#plans">Planos</Nav.Link>
+                        <Nav.Link href="https://aranet.speedtestcustom.com">Teste de Velocidade</Nav.Link>
+                        <Nav.Link onClick={contact}>Atendimento</Nav.Link>
+                    </Nav>
+                    <Nav>
+                        <CitySelection />
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+
     )
 }
 

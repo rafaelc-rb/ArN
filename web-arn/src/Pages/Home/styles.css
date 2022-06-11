@@ -1,0 +1,11 @@
+.title{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.text{
+    text-align: center;
+    color: #999999;
+    line-height: 10px;
+    font-size: 18px;
+}

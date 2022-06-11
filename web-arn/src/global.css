@@ -3,19 +3,19 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Maven Pro';
 
 }
 
 body{
     /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("./Assets/Img/background.jpg"); */
     background-size: 1500px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Maven Pro';
     -webkit-font-smoothing: antialiased;
 }
 
 button {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Maven Pro';
     display: flex;
     align-items: center;
     justify-content:center;
