@@ -51,7 +51,7 @@ function NavBar() {
                         <Nav.Link onClick={about}>Sobre nós</Nav.Link>
                         <Nav.Link href="#plans">Planos</Nav.Link>
                         <Nav.Link href="https://aranet.speedtestcustom.com">Teste de Velocidade</Nav.Link>
-                        <Nav.Link onClick={contact}>Atendimento</Nav.Link>
+                        <Nav.Link onClick={contact}>Contato</Nav.Link>
                     </Nav>
                     <Nav>
                         <CitySelection />

@@ -2,7 +2,6 @@ import React from 'react'
 import NavBar from '../../Components/NavBar'
 import image_about from '../../Assets/Img/image_about.png'
 
-
 import './styles.css'
 
 
@@ -23,7 +22,7 @@ function About() {
 
 
 
-    <img src={image_about}  className="image_about" alt="Logo" />
+    <img src={image_about}  className="image_about" alt="imagem sobre" />
 
     <h3 className='list'>
 
