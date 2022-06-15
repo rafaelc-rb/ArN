@@ -1,0 +1,46 @@
+.title_about{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Maven Pro';
+    color: #BC0000;
+    padding: 100px;
+}
+
+.paragraph_about{
+
+    text-align: justify;
+    padding: 100px;
+    padding-top: 5px;
+    color: black;
+   
+}
+
+.image_about {
+
+    height: 500px;
+    width: 500px;
+    margin-left: 60px;
+   
+  }
+
+.list {
+ 
+    color: black;
+    float: right;
+    text-align: justify;
+    padding-top: 100px;
+    padding-right: 120px;
+   
+   
+}
+
+.second_paragraph_about {
+
+    text-align: justify;
+    padding: 100px;
+    padding-top: 5px;
+    color: black;
+
+}
+
