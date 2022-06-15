@@ -14,7 +14,7 @@ function About() {
       
     <div>
 
-    <h1 className='title_about'>Sobre a Empresa</h1>
+    <h1 className='title_about'>Sobre Nós</h1>
 
     <h3 className='paragraph_about'>A Aranet Comunicação Ltda atua no fornecimento de conexão à internet banda larga via fibra óptica e rádio. 
     Licenciada junto a Anatel, atende empresas de pequeno, médio e grande porte, além de usuários residenciais. 
