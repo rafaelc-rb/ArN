@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from '../../Components/NavBar'
 import Banner from '../../Components/Banner'
-import CitySelection from '../../Components/CitySelection'
+import CitySelector from '../../Components/CitySelector'
 import './styles.css'
 import Bar from '../../Components/Bar'
 
@@ -12,11 +12,11 @@ function Home() {
       <Banner />
       <Bar />
       <div>
-        <h1>Escolha sua cidade</h1>
-        <h3>Veja a disponibilidade de</h3>
-        <h3>planos em sua cidade!</h3>
+        <h1 className='title'>Escolha sua cidade</h1>
+        <h3 className='text'>Veja a disponibilidade de</h3>
+        <h3 className='text'>planos em sua cidade!</h3>
       </div>
-      <CitySelection />
+      <CitySelector />
     </>
   )
 }
