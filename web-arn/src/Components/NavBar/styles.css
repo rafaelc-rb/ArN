@@ -1,20 +1,4 @@
-.header {
-    background-image: url("../../Assets/Img/header-background.svg");
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header-nav {
-    position: relative;
-    justify-self: baseline;
-    color: white;
-    size: 100%;
-}
-
-.header-text {
-    margin-right: 250px;
+.nav-text {
+    margin-right: 300px;
     font-weight: bolder;
 }

@@ -10,7 +10,6 @@
 }
 
 body {
-    /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("./Assets/Img/background.jpg"); */
     background-size: 1500px;
     font-family: 'Maven Pro';
     -webkit-font-smoothing: antialiased;
@@ -29,7 +28,22 @@ a {
 
 
 /*Definição de títulos/ subtitulos/ corpos de texto */
-h1 {
+
+.title {
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.text {
+    color: #999999;
+    text-align: center;
+    line-height: 15px;
+    font-size: 20px;
+}
+
+/* h1 {
     color: #000000;
     font-size: 40px;
     text-align: center;
@@ -51,4 +65,4 @@ h3 {
 p {
     color: #382f2f;
     font-size: 15px;
-}
+} */

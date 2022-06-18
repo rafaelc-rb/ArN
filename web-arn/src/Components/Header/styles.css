@@ -1,0 +1,8 @@
+.header {
+    background-image: url("../../Assets/Img/NavBar.svg");
+    display: flex;
+    flex-direction: column;
+    height: 31vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

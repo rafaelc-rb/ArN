@@ -1,14 +1,13 @@
 import React from 'react'
-import NavBar from '../../Components/NavBar'
-import image_contact from '../../Assets/Img/image_contact.png'
-
 import './styles.css'
+import image_contact from '../../Assets/Img/image_contact.png'
+import Header from '../../Components/Header'
 
 function Contact() {
   return (
 
     <>
-     <NavBar />
+     <Header />
 
     <div>
 

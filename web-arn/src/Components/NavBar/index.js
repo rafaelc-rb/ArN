@@ -1,11 +1,11 @@
 import React from 'react'
+import './styles.css'
+import { useNavigate } from 'react-router-dom'
 import {
     Nav,
     Navbar,
     Container
 } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
-import './styles.css'
 import logo from '../../Assets/Img/logo.png'
 
 function NavBar() {
@@ -21,30 +21,30 @@ function NavBar() {
     }
 
     return (
-        <div className='header'>
-            <Navbar variant='dark' expand="lg">
-                <Container className='header-nav'>
-                    <Navbar.Brand href="/">
-                        <img
-                            src={logo}
-                            alt='logo'
-                            width='250px'
-                        />
-                    </Navbar.Brand>
-                    <Navbar.Toggle />
-                    <Navbar.Collapse >
-                        <Nav className="me-auto" />
 
-                        <Nav className='header-text'>
-                            <Nav.Link onClick={about}>Sobre nós</Nav.Link>
-                            <Nav.Link href="#plans">Planos</Nav.Link>
-                            <Nav.Link href="https://aranet.speedtestcustom.com">Teste de Velocidade</Nav.Link>
-                            <Nav.Link onClick={contact}>Atendimento</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
+        <Navbar variant='dark' expand="lg">
+            <Container>
+                <Navbar.Brand href="/">
+                    <img
+                        src={logo}
+                        alt='logo'
+                        width='250px'
+                    />
+                </Navbar.Brand>
+                <Navbar.Toggle />
+                <Navbar.Collapse >
+                    <Nav className="me-auto" />
+
+                    <Nav className='nav-text'>
+                        <Nav.Link href='/'>Início</Nav.Link>
+                        <Nav.Link onClick={about}>Sobre nós</Nav.Link>
+                        <Nav.Link href="/#plans">Planos</Nav.Link>
+                        <Nav.Link href="https://aranet.speedtestcustom.com">Teste de Velocidade</Nav.Link>
+                        <Nav.Link onClick={contact}>Atendimento</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
 
     )
 }
