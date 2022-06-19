@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import slide1 from '../../Assets/Img/slide1.jpg'
 import slide2 from '../../Assets/Img/slide2.jpg'
 import slide3 from '../../Assets/Img/slide3.jpg'
+import slide4 from '../../Assets/Img/slide4.png'
 
 function Banner() {
     return (
@@ -37,6 +38,20 @@ function Banner() {
                     <h1 style={{color:'white'}}>One Piece</h1>
                 </Carousel.Caption>
             </Carousel.Item>
+
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={slide4}
+                    alt="fourth slide"
+                />
+                <Carousel.Caption >
+                    <h1 style={{color:'white'}}>K-ON two</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+
+
+
         </Carousel>
     )
 }
