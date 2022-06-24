@@ -1,8 +1,9 @@
-.home-header {
-    background-image: url("../../Assets/Img/home-header.svg");
+.home-publicity {
+    background-image: url("../../Assets/Img/publicity.svg");
     display: flex;
     flex-direction: column;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: contain;
+    margin-top: 40px;
 }
