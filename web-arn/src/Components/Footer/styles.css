@@ -1,0 +1,24 @@
+.footer-background {
+    background-image: url("../../Assets/Img/footer.svg");
+    display: flex;
+    flex-direction: column;
+    height: 425px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.footer-body {
+    align-self: center;
+}
+
+.copyright {
+    align-self: center;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.copyright-icon {
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
