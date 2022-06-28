@@ -1,22 +1,22 @@
-import React from 'react'
-import './styles.css'
-import Banner from '../../Components/Banner'
-import CitySelector from '../../Components/CitySelector'
-import Bar from '../../Components/Bar'
-import HomeHeader from '../../Components/HomeHeader'
-import Footer from '../../Components/Footer'
+import React from 'react';
+import Banner from '../../Components/Banner';
+import Bar from '../../Components/Bar';
+import CitySelector from '../../Components/CitySelector';
+import Footer from '../../Components/Footer';
+import HomeHeader from '../../Components/HomeHeader';
+import './styles.css';
 
 function Home() {
   return (
     <>
       <HomeHeader />
       <Banner />
-      <div className='home-publicity' />
+      <div className="home-publicity" />
       <Bar />
       <CitySelector />
       <Footer />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

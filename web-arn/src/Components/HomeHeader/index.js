@@ -1,13 +1,13 @@
-import React from 'react'
-import './styles.css'
-import NavBar from '../NavBar'
+import React from 'react';
+import NavBar from '../NavBar';
+import './styles.css';
 
 function HomeHeader() {
-    return (
-        <div className='home-header'>
-            <NavBar />
-        </div>
-    )
+  return (
+    <div className="home-header">
+      <NavBar />
+    </div>
+  );
 }
 
-export default HomeHeader
+export default HomeHeader;

@@ -1,14 +1,12 @@
-.title_contact{
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    color: #BC0000;
-    margin-bottom: 100px;
+.title_contact {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: #bc0000;
+  margin-bottom: 100px;
 }
 
-.image_contact{
-
-    height: 500px;
-    width: 500px;
-
+.image_contact {
+  height: 500px;
+  width: 500px;
 }
