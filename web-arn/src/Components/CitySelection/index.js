@@ -1,7 +1,6 @@
 import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import './styles.css'
 
 function CitySelection() {
   let navigate = useNavigate();
@@ -23,12 +22,12 @@ function CitySelection() {
     navigate(path);
   };
   return (
-    <Dropdown autoClose="outside">
-      <Dropdown.Toggle className="dropdown-position"  id="dropdown-autoclose-outside">
+    <Dropdown className="d-inline mx-2" autoClose="outside">
+      <Dropdown.Toggle id="dropdown-autoclose-outside">
         Selecione sua cidade
       </Dropdown.Toggle>
 
-      <Dropdown.Menu className="dropdown-menu">
+      <Dropdown.Menu>
         <Dropdown.Item onClick={anps}>Anápolis</Dropdown.Item>
         <Dropdown.Item onClick={ov}>Ouro Verde</Dropdown.Item>
         <Dropdown.Item onClick={alxn}>Alexânia</Dropdown.Item>

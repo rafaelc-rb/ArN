@@ -1,19 +1,8 @@
 .header {
+  background-image: url('../../Assets/Img/NavBar.svg');
   display: flex;
   flex-direction: column;
-
-  background-image: url('../../Assets/Img/NavBar.svg');
+  height: 31vh;
   background-repeat: no-repeat;
   background-size: cover;
-
-  height: 31vh;
-}
-
-@media (max-width: 1000px) {
-  .header {
-    background-image: none;
-    background-color: whitesmoke;
-
-    height: max-content;
-  }
 }

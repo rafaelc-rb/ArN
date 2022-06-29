@@ -1,11 +1,12 @@
-.image-contact {
-  width: 500px;
+.title_contact {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: #bc0000;
+  margin-bottom: 100px;
 }
 
-@media (max-width: 1000px) {
-  .image-contact {
-    margin-left: 0;
-    height: 60vh;
-    width: 100%;
-  }
+.image_contact {
+  height: 500px;
+  width: 500px;
 }
