@@ -1,5 +1,5 @@
 import React from 'react';
-import image_about from '../../Assets/Img/image-about.png';
+import image_about from '../../Assets/Img/image_about.png';
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
 import './styles.css';
@@ -10,7 +10,7 @@ function About() {
       <Header />
 
       <div>
-        <h1 className="title">Sobre Nós</h1>
+        <h1 className="title_about">Sobre Nós</h1>
 
         <h3 className="paragraphs-about">
           A Aranet Comunicação Ltda atua no fornecimento de conexão à internet
@@ -21,7 +21,7 @@ function About() {
           disponível e ótima relação custo-benefício.
         </h3>
 
-        <img src={image_about} className="image-about" alt="imagem sobre" />
+        <img src={image_about} className="image_about" alt="imagem sobre" />
 
         <h3 className="list-about">
           <li> Esforços voltados à satisfação do cliente </li>
