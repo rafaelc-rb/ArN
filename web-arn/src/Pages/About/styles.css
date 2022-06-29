@@ -1,41 +1,47 @@
-.title_about {
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  color: #bc0000;
-  margin-bottom: 100px;
-}
-
-.paragraph_about {
-  text-align: justify;
+.paragraphs-about {
   margin: 100px;
-  margin-top: 5px;
-  color: black;
+  text-align: justify;
 }
 
-.image_about {
+.image-about {
   height: 500px;
-  width: 500px;
   margin-left: 60px;
 }
 
-.list {
-  color: black;
+.list-about {
   float: right;
-  text-align: justify;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-right: 120px;
 
-  padding-left: 30px;
-}
-
-.second_paragraph_about {
   text-align: justify;
-  margin: 100px;
-  margin-top: 5px;
-  color: black;
 }
 
 li {
-  list-style: none;
+  list-style: circle;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .title {
+    margin-top: 20px;
+  }
+
+  .paragraphs-about {
+    margin: 20px;
+    font-size: larger;
+  }
+
+  .image-about {
+    margin-left: 0;
+    height: 60vh;
+    width: 100%;
+  }
+
+  .list-about {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin: 20px;
+
+    font-size: larger;
+  }
 }

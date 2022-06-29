@@ -1,6 +1,7 @@
 import React from 'react';
-import image_contact from '../../Assets/Img/image_contact.png';
 import Header from '../../Components/Header';
+import image_contact from '../../Assets/Img/image_contact.png';
+import Footer from '../../Components/Footer';
 import './styles.css';
 
 function Contact() {
@@ -13,6 +14,8 @@ function Contact() {
 
         <img src={image_contact} className="image_contact" alt="Logo" />
       </div>
+
+      <Footer />
     </>
   );
 }
