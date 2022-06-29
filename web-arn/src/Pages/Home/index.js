@@ -4,14 +4,14 @@ import Banner from '../../Components/Banner';
 import Bar from '../../Components/Bar';
 import CitySelector from '../../Components/CitySelector';
 import Footer from '../../Components/Footer';
-import './styles.css';
+import Publicity from '../../Components/Publicity';
 
 function Home() {
   return (
     <>
       <HomeHeader />
       <Banner />
-      <div className="home-publicity" />
+      <Publicity />
       <Bar />
       <CitySelector />
       <Footer />
