@@ -9,7 +9,7 @@ function Contact() {
       <Header />
 
       <div>
-        <h1 className="title_contact"> Atendimento </h1>
+        <h1 className="title"> Contato </h1>
 
         <img src={image_contact} className="image_contact" alt="Logo" />
       </div>
