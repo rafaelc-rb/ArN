@@ -1,8 +1,9 @@
 import React from 'react';
-import image_about from '../../Assets/Img/image_about.png';
+import image_about from '../../Assets/Img/image-about.png';
 import Header from '../../Components/Header';
-import './styles.css';
 import Footer from '../../Components/Footer';
+import './styles.css';
+
 
 function About() {
   return (
@@ -10,7 +11,7 @@ function About() {
       <Header />
 
       <div>
-        <h1 className="title_about">Sobre Nós</h1>
+        <h1 className="title">Sobre Nós</h1>
 
         <h3 className="paragraph_about">
         A Aranet Provedor atua no fornecimento de conexão à internet banda larga via fibra óptica e rádio. 
@@ -19,7 +20,7 @@ function About() {
         a Aranet conta com profissionais experientes, oferecendo a melhor tecnologia disponível e ótima relação custo-benefício.
         </h3>
 
-        <img src={image_about} className="image_about" alt="imagem sobre" />
+        <img src={image_about} className="image-about" alt="imagem sobre" />
 
         <h3 className="list">
         <li>Esforços voltados à satisfação do cliente.</li>
