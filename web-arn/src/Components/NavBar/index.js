@@ -22,12 +22,12 @@ function NavBar() {
           <img src={logo} alt="logo" width="250px" />
         </Navbar.Brand>
 
-        <Navbar.Toggle />
+        <Navbar.Toggle className="nav-toggle-button" />
 
         <Navbar.Collapse>
           <Nav className="me-auto" />
 
-          <Nav className="nav-text">
+          <Nav className="nav-list">
             <Nav.Link href="/">Início</Nav.Link>
             <Nav.Link onClick={about}>Sobre nós</Nav.Link>
             <Nav.Link href="/#plans">Planos</Nav.Link>

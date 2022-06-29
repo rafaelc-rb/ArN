@@ -30,9 +30,9 @@ a {
 /*Definição de títulos/ subtitulos/ corpos de texto */
 
 .title {
-    color: #000000;
-    font-size: 40px;
+    color: #bc0000;
     text-align: center;
+    font-size: 40px;
     font-weight: bolder;
 }
 

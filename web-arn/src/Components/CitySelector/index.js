@@ -3,6 +3,7 @@ import AreaSelector from './AreaSelector/AreaSelector';
 import Cities from './Cities/Cities';
 import ModalitySelector from './ModalitySelector/ModalitySelector';
 import './styles.css';
+import CitySelection from '../CitySelection';
 
 const CITIES = [
   {
@@ -86,7 +87,7 @@ function CitySelector() {
         <h1 className="title">Escolha sua cidade</h1>
         <h3 className="text">Veja a disponibilidade de</h3>
         <h3 className="text">planos em sua cidade!</h3>
-
+        
         <Cities
           cities={CITIES}
           selectedCity={selectedCity}
@@ -102,6 +103,7 @@ function CitySelector() {
           selectedModality={selectedModality}
           setSelectedModality={setsSelectedModality}
         />
+        
       </div>
     </div>
   );
