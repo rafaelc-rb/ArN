@@ -1,8 +1,11 @@
 .home-header {
-  background-image: url('../../Assets/Img/home-header.svg');
   display: flex;
   flex-direction: column;
-  height: 100vh;
+
+  width: 100vw;
+  height: 50vw;
+
+  background-image: url('../../Assets/Img/home-header.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }

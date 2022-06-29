@@ -21,7 +21,9 @@ function NavBar() {
         <Navbar.Brand href="/">
           <img src={logo} alt="logo" width="250px" />
         </Navbar.Brand>
+
         <Navbar.Toggle />
+
         <Navbar.Collapse>
           <Nav className="me-auto" />
 
@@ -32,6 +34,7 @@ function NavBar() {
             <Nav.Link href="https://aranet.speedtestcustom.com">
               Teste de Velocidade
             </Nav.Link>
+
             <Nav.Link onClick={contact}>Atendimento</Nav.Link>
           </Nav>
         </Navbar.Collapse>

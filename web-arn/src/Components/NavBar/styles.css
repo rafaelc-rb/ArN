@@ -2,3 +2,14 @@
   margin-right: auto;
   font-weight: bolder;
 }
+
+@media (max-width: 1000px) {
+  .nav-text {
+    padding: 20px;
+
+    background-color: #d14042;
+
+    border-radius: 10px;
+    text-align: right;
+  }
+}

@@ -25,6 +25,8 @@
   text-align: justify;
   margin-top: 100px;
   margin-right: 120px;
+
+  padding-left: 30px;
 }
 
 .second_paragraph_about {
@@ -32,4 +34,8 @@
   margin: 100px;
   margin-top: 5px;
   color: black;
+}
+
+li {
+  list-style: none;
 }

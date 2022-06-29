@@ -6,6 +6,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
+
+  width: 100vw;
 }
 
 .footer-body {
