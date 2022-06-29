@@ -1,10 +1,16 @@
-.nav-text {
+.nav-list {
   margin-right: auto;
   font-weight: bolder;
+  font-size: large;
 }
 
 @media (max-width: 1000px) {
-  .nav-text {
+  .test{
+    background-color: #d14042;
+    border-radius: 10px;
+  }
+
+  .nav-list {
     padding: 20px;
 
     background-color: #d14042;
