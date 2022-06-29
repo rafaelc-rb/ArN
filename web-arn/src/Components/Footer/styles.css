@@ -1,21 +1,22 @@
 .footer-background {
-  background-image: url('../../Assets/Img/footer.svg');
   display: flex;
   flex-direction: column;
-  height: 425px;
+  background-image: url('../../Assets/Img/footer.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 425px;
   justify-content: space-between;
+  align-items: center;
 
   width: 100%;
 }
 
-.footer-body {
-  align-self: center;
+.footer-logo {
+  align-self: baseline;
+  margin: 10px;
 }
 
 .copyright {
-  align-self: center;
   font-weight: bolder;
   font-size: 14px;
 }
@@ -23,4 +24,15 @@
 .copyright-icon {
   margin-right: 2px;
   margin-bottom: 2px;
+}
+
+@media (max-width: 1000px) {
+  .footer-background {
+    background-image: none;
+    background-color: whitesmoke;
+  }
+
+  .footer-logo {
+    align-self: center;
+  }
 }

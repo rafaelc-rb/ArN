@@ -22,7 +22,7 @@ function NavBar() {
           <img src={logo} alt="logo" width="250px" />
         </Navbar.Brand>
 
-        <Navbar.Toggle className="test" />
+        <Navbar.Toggle className="nav-toggle-button" />
 
         <Navbar.Collapse>
           <Nav className="me-auto" />

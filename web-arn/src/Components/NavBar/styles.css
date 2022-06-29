@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 1000px) {
-  .test{
+  .nav-toggle-button{
     background-color: #d14042;
     border-radius: 10px;
   }

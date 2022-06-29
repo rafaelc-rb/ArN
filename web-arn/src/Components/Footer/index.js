@@ -7,11 +7,11 @@ import './styles.css';
 function Footer() {
   return (
     <div className="footer-background">
-      <Navbar.Brand href="/">
+      <Navbar.Brand href="/" className="footer-logo">
         <img src={logo} alt="logo" width="250px" />
       </Navbar.Brand>
 
-      <div className="footer-body">HERE GOES THE FOOTER BODY</div>
+      <div >HERE GOES THE FOOTER BODY</div>
 
       <div className="copyright">
         <FaRegCopyright className="copyright-icon" />{' '}
