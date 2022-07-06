@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../Components/Footer';
 import Header from '../../Components/Header';
 
-function Comodato() {
+function Contract() {
   return (
     <div>
       <Header />
@@ -12,4 +12,4 @@ function Comodato() {
     );
 }
 
-export default Comodato;
+export default Contract;
