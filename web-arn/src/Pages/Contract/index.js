@@ -10,7 +10,8 @@ function Contract() {
     <div>
       <Header />
 
-     <h1 className="title" > Comodato </h1> 
+     <h1 className="title" > Contrato </h1> 
+     <h3 className="subtitle"> Termo de comodato </h3>
 
       <div> 
 

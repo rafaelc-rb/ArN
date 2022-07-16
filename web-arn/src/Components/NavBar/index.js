@@ -14,6 +14,10 @@ function NavBar() {
     let path = '/contact';
     navigate(path);
   };
+  const contract = () => {
+    let path = '/contract';
+    navigate(path);
+  };
 
   return (
     <Navbar variant="dark" expand="lg">
@@ -36,6 +40,7 @@ function NavBar() {
             </Nav.Link>
 
             <Nav.Link onClick={contact}>Atendimento</Nav.Link>
+            <Nav.Link onClick={contract}>Contrato</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
