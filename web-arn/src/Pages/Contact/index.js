@@ -7,7 +7,7 @@ import './styles.css';
 function Contact() {
   return (
     <>
-      <Header />
+      <Header type='header'/>
 
       <div>
         <h1 className="title"> Contato </h1>

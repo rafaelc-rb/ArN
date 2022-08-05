@@ -7,7 +7,7 @@ import './styles.css';
 function About() {
   return (
     <>
-      <Header />
+      <Header type='header'/>
 
       <div>
         <h1 className="title">Sobre Nós</h1>

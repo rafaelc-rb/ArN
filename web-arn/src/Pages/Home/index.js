@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeHeader from '../../Components/HomeHeader';
+import Header from '../../Components/Header';
 import Banner from '../../Components/Banner';
 import Bar from '../../Components/Bar';
 import CitySelector from '../../Components/CitySelector';
@@ -11,7 +11,7 @@ import './styles.css';
 function Home() {
   return (
     <>
-      <HomeHeader />
+      <Header type='home-header' />
       <Banner />
       <Publicity />
       <Bar />

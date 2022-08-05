@@ -8,7 +8,7 @@ import './styles.css';
 function Contract() {
   return (
     <div>
-      <Header />
+      <Header type='header'/>
 
      <h1 className="title" > Contrato </h1> 
      <h3 className="subtitle"> Termo de comodato </h3>
