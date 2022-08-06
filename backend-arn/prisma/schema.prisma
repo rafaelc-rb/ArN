@@ -22,7 +22,6 @@ model Zone {
   name String
 
   cityDetails CityDetails?
-
 }
 
 model Tecnology {
@@ -52,7 +51,6 @@ model CityDetails {
   tecnology   Tecnology @relation(fields: [tecnologyId], references: [id])
   tecnologyId Int       @unique
 
-  plan   Plan @relation(fields: [planId], references: [id])
-  planId Int  @unique
-
+  plan   Plan   @relation(fields: [planId], references: [id])
+  planId Int    @unique
 }
