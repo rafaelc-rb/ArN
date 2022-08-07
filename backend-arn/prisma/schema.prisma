@@ -14,35 +14,36 @@ model City {
   id   Int    @id @default(autoincrement())
   name String
 
-  plan Plan?
+  plans Plan[]
 }
 
 model Zone {
   id   Int    @id @default(autoincrement())
   name String
 
-  plan Plan?
+  plans Plan[]
 }
 
 model Technology {
   id   Int    @id @default(autoincrement())
   name String
 
-  plan Plan?
+  plans Plan[]
 }
 
 model Plan {
-  city   City @relation(fields: [cityId], references: [id])
-  cityId Int  @unique
+  id   Int    @id @default(autoincrement())
 
-  zone   Zone @relation(fields: [zoneId], references: [id])
-  zoneId Int  @unique
+  city        City @relation(fields: [cityId], references: [id])
+  cityId Int  
 
-  technology   Technology @relation(fields: [technologyId], references: [id])
-  technologyId Int        @unique
+  zone        Zone @relation(fields: [zoneId], references: [id])
+  zoneId Int  
+
+  technology  Technology @relation(fields: [technologyId], references: [id])
+  technologyId Int     
 
   mb    Int
   price Float
 
-  @@id([cityId, zoneId, technologyId])
 }
