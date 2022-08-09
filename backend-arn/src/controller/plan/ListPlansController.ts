@@ -5,8 +5,7 @@ import { prisma } from '../../service/prisma'
 class ListPlansController {
     async execute(req: Request, res: Response) {
         try {
-            const plans = await prisma.plan.findMany
-                (
+            const plans = await prisma.plan.findMany(
                     {
                         select: {
                             mb: true,
