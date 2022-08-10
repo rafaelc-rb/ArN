@@ -24,7 +24,7 @@ function CitySelector() {
 
   const [selectedCity, setSelectedCity] = useState(1);
   const [selectedArea, setSelectedArea] = useState('urban');
-  const [selectedTech, setSelectedTech] = useState('fiber');
+  const [selectedTech, setSelectedTech] = useState('radio');
 
 
   return (

@@ -13,7 +13,7 @@ export default function PlanHeader({
       <HeaderTextStyled>
         {optionalWifi ? 'Wifi opicional' : 'Wifi não incluso'}
       </HeaderTextStyled>
-      <HeaderTextStyled size="big">{velocity} Mega</HeaderTextStyled>
+      <HeaderTextStyled size="big">{velocity} Megas</HeaderTextStyled>
       <HeaderTextStyled>
         {tech === 'fiber' ? 'Fibra ótica' : 'Rádio'}
       </HeaderTextStyled>

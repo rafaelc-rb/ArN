@@ -10,15 +10,10 @@ export default function PlansList({
   selectedArea,
 }) {
 
-  const filteredPlans = data.find((e) => (selectedCity === e.city.name && selectedArea === e.zone.name && selectedTech === e.technology.name))
-  // 
+  const zoneHandled = selectedArea === 'urban' ? 'Urbana' : 'Rural';
+  const techHandled = selectedTech === 'fiber' ? 'Fibra' : 'Rádio';
 
-  // const city = data.find(( city) => (selectedCity === city.id));
-
-  // const plans = selectedArea === 'urban' ? city.plans.urban : city.plans.rural;
-  // const filteredPlans = plans.filter(
-  //   (plan) => plan.tech === selectedTech
-  // );
+  const filteredPlans = data.filter((plans) => plans.city.id === Number(selectedCity) && plans.zone.name === zoneHandled && plans.technology.name === techHandled);
 
   return (
     <PlansListStyled>

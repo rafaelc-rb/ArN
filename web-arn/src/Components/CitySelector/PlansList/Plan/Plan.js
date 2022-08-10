@@ -11,7 +11,7 @@ export default function Plan({ plan }) {
       <PlanHeader
         optionalWifi={true}
         price={plan.price}
-        velocity={plan.velocity}
+        velocity={plan.mb}
         tech={plan.tech}
       />
 
