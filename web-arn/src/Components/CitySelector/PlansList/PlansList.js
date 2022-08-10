@@ -4,21 +4,21 @@ import Plan from './Plan/Plan';
 import PlansListStyled from './PlansList.styled';
 
 export default function PlansList({
-  cities,
+  data,
   selectedCity,
-  selectedModality,
+  selectedTech,
   selectedArea,
 }) {
-  const city = cities.find((city) => selectedCity === city.normalizedName);
-  const plans = selectedArea === 'urban' ? city.plans.urban : city.plans.rural;
-  const filteredPlans = plans.filter(
-    (plan) => plan.modality === selectedModality
-  );
+
+  const zoneHandled = selectedArea === 'urban' ? 'Urbana' : 'Rural';
+  const techHandled = selectedTech === 'fiber' ? 'Fibra' : 'Rádio';
+
+  const filteredPlans = data.filter((plans) => plans.city.id === Number(selectedCity) && plans.zone.name === zoneHandled && plans.technology.name === techHandled);
 
   return (
     <PlansListStyled>
-      {filteredPlans.map((plan, index) => (
-        <Plan key={index} plan={plan} />
+      {filteredPlans.map((plan) => (
+        <Plan key={plan.id} plan={plan} />
       ))}
     </PlansListStyled>
   );

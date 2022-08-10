@@ -7,6 +7,7 @@ export default function Cities({ cities, selectedCity, setSelectedCity }) {
     <CitiesStyled>
       {cities.map((city) => (
         <City
+          key={city.id}
           city={city}
           selectedCity={selectedCity}
           setSelectedCity={setSelectedCity}

@@ -8,7 +8,7 @@ export default styled.div`
   width: 50%;
 
   background-color: ${(props) =>
-    props.selectedModality ? '#c83c3b' : 'white'};
+    props.selectedTech ? '#c83c3b' : 'white'};
 
   box-shadow: 0px 0px 50px grey;
 `;
