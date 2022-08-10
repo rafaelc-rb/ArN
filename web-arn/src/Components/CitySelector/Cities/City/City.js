@@ -4,20 +4,21 @@ import CityNameStyled from './CityName/CityName.styled';
 import CityRadioButtonStyled from './CityRadioButton/CityRadioButton.styled';
 
 export default function City({ city, selectedCity, setSelectedCity }) {
+
   const handleClick = (event) => {
     const { parentElement } = event.target;
-
-    setSelectedCity(parentElement.id);
+    var id = parentElement.id
+    setSelectedCity(id);
   };
 
   return (
     <CityStyled id={city.id} onClick={handleClick}>
-      <CityNameStyled selectedCity={selectedCity === city.id}>
+      <CityNameStyled selectedCity={selectedCity == city.id}>
         {city.name} - GO
       </CityNameStyled>
 
       <CityRadioButtonStyled
-        selectedCity={selectedCity === city.id}
+        selectedCity={selectedCity == city.id}
       />
     </CityStyled>
   );
