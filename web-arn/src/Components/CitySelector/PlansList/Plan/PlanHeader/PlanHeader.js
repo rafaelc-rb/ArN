@@ -6,7 +6,7 @@ export default function PlanHeader({
   optionalWifi,
   velocity,
   price,
-  modality,
+  tech,
 }) {
   return (
     <PlanHeaderStyled>
@@ -15,7 +15,7 @@ export default function PlanHeader({
       </HeaderTextStyled>
       <HeaderTextStyled size="big">{velocity} Mega</HeaderTextStyled>
       <HeaderTextStyled>
-        {modality === 'fiber' ? 'Fibra ótica' : 'Rádio'}
+        {tech === 'fiber' ? 'Fibra ótica' : 'Rádio'}
       </HeaderTextStyled>
     </PlanHeaderStyled>
   );

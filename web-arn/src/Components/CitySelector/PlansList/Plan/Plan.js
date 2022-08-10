@@ -12,7 +12,7 @@ export default function Plan({ plan }) {
         optionalWifi={true}
         price={plan.price}
         velocity={plan.velocity}
-        modality={plan.modality}
+        tech={plan.tech}
       />
 
       <PlanDescriptionStyled>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AreaSelector from './AreaSelector/AreaSelector';
 import Cities from './Cities/Cities';
-import ModalitySelector from './ModalitySelector/ModalitySelector';
+import TechSelector from './TechSelector/TechSelector';
 import PlansList from './PlansList/PlansList';
 
 import { api } from '../../Service/Api'
@@ -9,26 +9,23 @@ import { api } from '../../Service/Api'
 function CitySelector() {
   
   const [citiesData, setCitiesData] = useState([]);
-
   useEffect(() => {
     api.get('cities').then(function (response) {
       setCitiesData(response.data)
     })
   }, [])
 
+  const [plansData, setPlansData] = useState([]);
+  useEffect(() => {
+    api.get('plans').then(function (response) {
+      setPlansData(response.data)
+    })
+  }, [])
+
   const [selectedCity, setSelectedCity] = useState(1);
   const [selectedArea, setSelectedArea] = useState('urban');
-  const [selectedModality, setsSelectedModality] = useState('fiber');
+  const [selectedTech, setSelectedTech] = useState('fiber');
 
-  // const [plansData, setPlansData] = useState([]);
-
-
-
-  // useEffect(() => {
-  //   api.get('plans').then(function (response) {
-  //     setPlansData(response.data)
-  //   })
-  // }, [])
 
   return (
     <div>
@@ -48,17 +45,17 @@ function CitySelector() {
           setSelectedArea={setSelectedArea}
         />
 
-        <ModalitySelector
-          selectedModality={selectedModality}
-          setSelectedModality={setsSelectedModality}
+        <TechSelector
+          selectedTech={selectedTech}
+          setSelectedTech={setSelectedTech}
         />
 
-        {/* <PlansList
-          // cities={CITIES}
+        <PlansList
+          data={plansData}
           selectedArea={selectedArea}
           selectedCity={selectedCity}
-          selectedModality={selectedModality}
-        /> */}
+          selectedTech={selectedTech}
+        />
       </div>
     </div>
   );

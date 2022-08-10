@@ -8,6 +8,7 @@ class ListPlansController {
             const plans = await prisma.plan.findMany(
                     {
                         select: {
+                            id: true,
                             mb: true,
                             price: true,
                             city: {
