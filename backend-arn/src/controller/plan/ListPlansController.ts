@@ -12,16 +12,19 @@ class ListPlansController {
                             price: true,
                             city: {
                                 select:{
+                                    id: true,
                                     name: true
                                 }
                             },
                             zone: {
                                 select:{
+                                    id: true,
                                     name: true
                                 }
                             },
                             technology: {
                                 select:{
+                                    id: true,
                                     name: true
                                 }
                             },
