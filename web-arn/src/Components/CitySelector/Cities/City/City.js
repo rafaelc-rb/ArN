@@ -3,21 +3,22 @@ import CityStyled from './City.styled';
 import CityNameStyled from './CityName/CityName.styled';
 import CityRadioButtonStyled from './CityRadioButton/CityRadioButton.styled';
 
-export default function City({ city, state, selectedCity, setSelectedCity }) {
-  const handleClick = (event) => {
-    const { id, parentElement } = event.target;
+export default function City({ city, selectedCity, setSelectedCity }) {
 
-    setSelectedCity(id || parentElement.id);
+  const handleClick = (event) => {
+    const { parentElement } = event.target;
+    var id = parentElement.id
+    setSelectedCity(Number(id));
   };
 
   return (
-    <CityStyled id={city.normalizedName} onClick={handleClick}>
-      <CityNameStyled selectedCity={selectedCity === city.normalizedName}>
-        {city.name} - {city.state}
+    <CityStyled id={city.id} onClick={handleClick}>
+      <CityNameStyled selectedCity={selectedCity === city.id}>
+        {city.name} - GO
       </CityNameStyled>
 
       <CityRadioButtonStyled
-        selectedCity={selectedCity === city.normalizedName}
+        selectedCity={selectedCity === city.id}
       />
     </CityStyled>
   );

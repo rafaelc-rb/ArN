@@ -11,8 +11,8 @@ export default function Plan({ plan }) {
       <PlanHeader
         optionalWifi={true}
         price={plan.price}
-        velocity={plan.velocity}
-        modality={plan.modality}
+        velocity={plan.mb}
+        tech={plan.tech}
       />
 
       <PlanDescriptionStyled>
