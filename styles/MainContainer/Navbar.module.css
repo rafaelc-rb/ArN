@@ -1,0 +1,38 @@
+.navbar{
+    display: flex;
+    background-color: #c83c3b;
+    justify-content: space-between;
+    height: 69px;
+    list-style: none;
+    align-items: center;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 0px;
+}
+
+.navbar a {
+    color: #fff;
+    margin-right: 5em;
+
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #999;
+}
+
+.actions{
+    display: flex;
+    list-style: none;
+
+    font-size: 18px;
+}
+
+.leading{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 5em;
+}
