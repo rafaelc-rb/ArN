@@ -1,0 +1,325 @@
+[
+    {
+        "id": 19,
+        "mb": 4,
+        "price": 50,
+        "city": {
+            "id": 1,
+            "name": "Anápolis"
+        },
+        "zone": {
+            "id": 1,
+            "name": "Urbana"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 20,
+        "mb": 6,
+        "price": 75,
+        "city": {
+            "id": 1,
+            "name": "Anápolis"
+        },
+        "zone": {
+            "id": 1,
+            "name": "Urbana"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 21,
+        "mb": 10,
+        "price": 100,
+        "city": {
+            "id": 1,
+            "name": "Anápolis"
+        },
+        "zone": {
+            "id": 1,
+            "name": "Urbana"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 22,
+        "mb": 6,
+        "price": 75,
+        "city": {
+            "id": 1,
+            "name": "Anápolis"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 23,
+        "mb": 10,
+        "price": 100,
+        "city": {
+            "id": 1,
+            "name": "Anápolis"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 24,
+        "mb": 6,
+        "price": 75,
+        "city": {
+            "id": 2,
+            "name": "Ouro Verde"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 25,
+        "mb": 10,
+        "price": 100,
+        "city": {
+            "id": 2,
+            "name": "Ouro Verde"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 26,
+        "mb": 6,
+        "price": 75,
+        "city": {
+            "id": 3,
+            "name": "Alexânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 2,
+            "name": "Fibra"
+        }
+    },
+    {
+        "id": 27,
+        "mb": 10,
+        "price": 100,
+        "city": {
+            "id": 3,
+            "name": "Alexânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 2,
+            "name": "Fibra"
+        }
+    },
+    {
+        "id": 28,
+        "mb": 25,
+        "price": 125,
+        "city": {
+            "id": 3,
+            "name": "Alexânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 2,
+            "name": "Fibra"
+        }
+    },
+    {
+        "id": 29,
+        "mb": 50,
+        "price": 150,
+        "city": {
+            "id": 3,
+            "name": "Alexânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 2,
+            "name": "Fibra"
+        }
+    },
+    {
+        "id": 30,
+        "mb": 6,
+        "price": 75,
+        "city": {
+            "id": 3,
+            "name": "Alexânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 31,
+        "mb": 10,
+        "price": 100,
+        "city": {
+            "id": 3,
+            "name": "Alexânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 32,
+        "mb": 6,
+        "price": 75,
+        "city": {
+            "id": 4,
+            "name": "Abadiânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 2,
+            "name": "Fibra"
+        }
+    },
+    {
+        "id": 33,
+        "mb": 10,
+        "price": 100,
+        "city": {
+            "id": 4,
+            "name": "Abadiânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 2,
+            "name": "Fibra"
+        }
+    },
+    {
+        "id": 34,
+        "mb": 25,
+        "price": 125,
+        "city": {
+            "id": 4,
+            "name": "Abadiânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 2,
+            "name": "Fibra"
+        }
+    },
+    {
+        "id": 35,
+        "mb": 50,
+        "price": 150,
+        "city": {
+            "id": 4,
+            "name": "Abadiânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 2,
+            "name": "Fibra"
+        }
+    },
+    {
+        "id": 36,
+        "mb": 6,
+        "price": 75,
+        "city": {
+            "id": 4,
+            "name": "Abadiânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    },
+    {
+        "id": 37,
+        "mb": 10,
+        "price": 100,
+        "city": {
+            "id": 4,
+            "name": "Abadiânia"
+        },
+        "zone": {
+            "id": 2,
+            "name": "Rural"
+        },
+        "technology": {
+            "id": 1,
+            "name": "Rádio"
+        }
+    }
+]

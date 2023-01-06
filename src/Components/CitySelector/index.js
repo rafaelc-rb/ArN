@@ -1,31 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import AreaSelector from './AreaSelector/AreaSelector';
-import Cities from './Cities/Cities';
-import TechSelector from './TechSelector/TechSelector';
-import PlansList from './PlansList/PlansList';
-
-import { api } from '../../Service/Api'
+import React, { useEffect, useState } from "react";
+import AreaSelector from "./AreaSelector/AreaSelector";
+import Cities from "./Cities/Cities";
+import TechSelector from "./TechSelector/TechSelector";
+import PlansList from "./PlansList/PlansList";
+import citiesJson from "../../Service/json/citites.json";
+import plansJson from "../../Service/json/plans.json";
 
 function CitySelector() {
-  
   const [citiesData, setCitiesData] = useState([]);
   useEffect(() => {
-    api.get('cities').then(function (response) {
-      setCitiesData(response.data)
-    })
-  }, [])
+    setCitiesData(citiesJson);
+  }, []);
 
   const [plansData, setPlansData] = useState([]);
   useEffect(() => {
-    api.get('plans').then(function (response) {
-      setPlansData(response.data)
-    })
-  }, [])
+    setPlansData(plansJson);
+  }, []);
 
   const [selectedCity, setSelectedCity] = useState(1);
-  const [selectedArea, setSelectedArea] = useState('urban');
-  const [selectedTech, setSelectedTech] = useState('radio');
-
+  const [selectedArea, setSelectedArea] = useState("urban");
+  const [selectedTech, setSelectedTech] = useState("radio");
 
   return (
     <div>
@@ -33,7 +27,7 @@ function CitySelector() {
         <h1 className="title">Escolha sua cidade</h1>
         <h3 className="text">Veja a disponibilidade de</h3>
         <h3 className="text">planos em sua cidade!</h3>
-        
+
         <Cities
           cities={citiesData}
           selectedCity={selectedCity}
