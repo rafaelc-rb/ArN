@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../Components/Header';
-import Banner from '../../Components/Banner';
+// import Banner from '../../Components/Banner';
 import Bar from '../../Components/Bar';
 import CitySelector from '../../Components/CitySelector';
 import Footer from '../../Components/Footer';
@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <Header type='home-header' />
-      <Banner />
+      {/* <Banner /> */}
       <Publicity />
       <Bar />
       {/* <Plans /> */}
