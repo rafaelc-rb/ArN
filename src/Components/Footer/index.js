@@ -11,7 +11,7 @@ function Footer() {
         <img src={logo} alt="logo" width="250px" />
       </Navbar.Brand>
 
-      <div >HERE GOES THE FOOTER BODY</div>
+      <div ></div>
 
       <div className="copyright">
         <FaRegCopyright className="copyright-icon" />{' '}
