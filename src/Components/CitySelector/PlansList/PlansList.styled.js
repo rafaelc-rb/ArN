@@ -5,4 +5,6 @@ export default styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 4em;
+  font-size: 1.2em;
 `;

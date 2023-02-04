@@ -17,9 +17,10 @@ export default function PlansList({
 
   return (
     <PlansListStyled>
-      {filteredPlans.map((plan) => (
+      {filteredPlans.length > 0 ?
+      filteredPlans.map((plan) => (
         <Plan key={plan.id} plan={plan} />
-      ))}
+      )): <span>Desculpe, infelizmente não podemos atender às suas necessidades neste momento. Esperamos poder oferecer um serviço de qualidade em breve.</span>}
     </PlansListStyled>
   );
 }
